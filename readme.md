@@ -27,7 +27,7 @@ and provides a Python interface (`ColabKit`) that communicates with them through
 ## Installation
 
 ```bash
-pip install colabkit
+pip install git+https://github.com/MuhammetOzturk/colabkit.git
 ```
 
 ---
