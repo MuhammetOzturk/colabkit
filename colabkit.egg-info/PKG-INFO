@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: colabkit
+Version: 0.0.1
+Summary: Provides a management interface for camera and microphone devices in Google Colab.
+Author-email: Muhammet Ozturk <muhammetozturk.219@gmail.com>
+Project-URL: Homepage, https://muhammetozturk.github.io//colabkit
+Project-URL: Source, https://github.com/muhammetozturk/colabkit
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

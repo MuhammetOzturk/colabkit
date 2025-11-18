@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colabkit"
+version = "0.0.1"
+description = "Provides a management interface for camera and microphone devices in Google Colab."
+authors = [
+  {name = "Muhammet Ozturk", email = "muhammetozturk.219@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+
+[tool.setuptools.packages.find]
+include = ["colabkit"]
+
+[tool.setuptools.package-data]
+colabkit = ["static/*.js"]
+
+[project.urls]
+Homepage = "https://muhammetozturk.github.io//colabkit"
+Source = "https://github.com/muhammetozturk/colabkit"
+
