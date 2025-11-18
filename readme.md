@@ -27,6 +27,10 @@ and provides a Python interface (`ColabKit`) that communicates with them through
 ## Installation
 
 ```bash
+pip install google-colabkit
+```
+or
+```bash
 pip install git+https://github.com/MuhammetOzturk/colabkit.git
 ```
 
