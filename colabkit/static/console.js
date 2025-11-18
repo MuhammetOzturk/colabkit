@@ -56,3 +56,4 @@ class Console {
         this.container.innerHTML = "";
     }
 }
+window.Console = new Console()
