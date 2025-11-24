@@ -30,4 +30,4 @@ jobs:
       env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPITEST_API_TOKEN }}
-      run: twine upload -r pypitest -u ${env.TWINE_USERNAME} -p ${{env.TWINE_USERNAME}} dist/*
+      run: twine upload -r pypitest dist/*
