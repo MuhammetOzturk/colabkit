@@ -1,9 +1,6 @@
 name: Publish to PyPI
 
-on:
-  push:
-    tags:
-      - 'v*'   # v1.0.0 gibi tag atılınca tetiklenecek
+on: [push]
 
 jobs:
   build:
@@ -21,12 +18,16 @@ jobs:
       run: |
         pip install build twine
 
+    - name: Delete build old files
+    - run: | 
+        rm -rf build/ dist/ *.egg-info
+
     - name: Build package
       run: |
         python -m build
 
-    - name: Publish to PyPI
-      uses: pypa/gh-action-pypi-publish@v1.8.8
-      with:
-        password: ${{ secrets.PYPI_API_TOKEN }}
-
+    - name: Publish to PYPI
+      env:
+          TWINE_USERNAME: __token__
+          TWINE_PASSWORD: ${{ secrets.PYPITEST_API_TOKEN }}
+        run: twine upload -r pypitest dist/*
