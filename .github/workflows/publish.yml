@@ -19,7 +19,7 @@ jobs:
         pip install build twine
 
     - name: Delete build old files
-    - run: | 
+      run: | 
         rm -rf build/ dist/ *.egg-info
 
     - name: Build package
@@ -30,4 +30,4 @@ jobs:
       env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.PYPITEST_API_TOKEN }}
-        run: twine upload -r pypitest dist/*
+      run: twine upload -r pypitest dist/*
