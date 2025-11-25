@@ -11,6 +11,8 @@ Description-Content-Type: text/markdown
 
 # ColabKit
 
+---
+
 ColabKit is a lightweight bridge between Python and JavaScript for Google Colab.  
 It allows you to load custom JavaScript tools, interact with the browser, control the webcam, capture frames, and build interactive Colab applications with minimal effort.
 
@@ -36,6 +38,10 @@ and provides a Python interface (`ColabKit`) that communicates with them through
 
 ## Installation
 
+```bash
+pip install google-colabkit
+```
+or
 ```bash
 pip install git+https://github.com/MuhammetOzturk/colabkit.git
 ```
